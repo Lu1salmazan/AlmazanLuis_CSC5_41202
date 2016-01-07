@@ -13,7 +13,6 @@ using namespace std;
 
 //Global Constant
 const char cnvPerc=100;//Conversion to percentage
-
 //Function Prototypes
 
 //Execution  Begin Here
