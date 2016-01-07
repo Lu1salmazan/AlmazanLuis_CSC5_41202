@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Military_Budget_Calculation_v3
+PROJECTNAME=Savitch_9thED_Ch1_prob4
 
 # Active Configuration
 DEFAULTCONF=Debug

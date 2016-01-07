@@ -12,7 +12,7 @@ using namespace std;
 //User Libraries
 
 //Global Constant
-const char cnvPerc=100;//Conversion to percentage
+const char CNVPERC=100;//Conversion to percentage
 //Function Prototypes
 
 //Execution  Begin Here
@@ -23,7 +23,7 @@ int main(int argc, char** argv) {
     float percMil;        //Declaration for the calculation %
     
     //Calculate the percentage for the military budget
-     percMil=milBdgt/fedBdgt*cnvPerc;
+     percMil=milBdgt/fedBdgt*CNVPERC;
     
     //Output the results
     cout<<"The Military budget = $"<<milBdgt<<endl;
