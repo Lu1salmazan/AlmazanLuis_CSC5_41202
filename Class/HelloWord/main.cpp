@@ -1,32 +1,31 @@
-/* 
-     File:   main.cpp
-    Author: Luis Almazan
-    Created: on January 4, 2016, 10:18 Am
-    Purpose: Check out IDE
+/*Author: Luis Almazan
+ *Date:01/11/16
+ *Purpose:Jack Pot
  */
 
-//System Libraries
+//System libraries
 #include <iostream>
 using namespace std;
 
-//User Libraries
-  
- //Global Constant
+	//User libraries
 
-//Function prototypes
+	//Global constant
 
-//Execution Begins Here
-int main(int argc, char** argv) {
-    //Declare an initialize variables
-    
-    //Input data
-    
-    //Calculate or map input to output
-    
-    //Output the result
-     cout<<"Hello World"<<endl;
-            
-    //Exit Stage Right        
-    return 0;
+	//Function Prototypes
+
+int main() {
+	//Declare Variables and initialize them
+	  float jckpt,lmpSum=0.62,aftTax=0.52,mrige=0.5,totamnt;
+
+	//Input
+	cout<<"Enter The JackPot Amount"<<endl;
+	cin>>jckpt;
+
+	//Calculation of Jackpot
+	totamnt=jckpt*lmpSum*aftTax*mrige;
+
+	//Output
+	cout<<"The total amount of Money you are getting is "<<totamnt<<endl;
+
+	return 0;
 }
-
