@@ -3,7 +3,7 @@
  * File:   main.cpp
  * Author: Luis Almazan
  * Created: on January 9, 2016, 10:32 PM
- * Purpose: Output product and sum
+ * Purpose: CS Display
  */
 
 #include <iostream>
