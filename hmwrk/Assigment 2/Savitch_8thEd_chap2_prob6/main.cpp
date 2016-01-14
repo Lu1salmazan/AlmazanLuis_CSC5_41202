@@ -16,31 +16,24 @@ using namespace std;
 
 int main() {
     //Declare Variables and initialize them
-    const unsigned char MAXCAP=35;  //Max Capacity of the room
-    unsigned short stsUtil;         //Sits utilized 
-    char            delta;           //Difference between capacity and utilization
+    float qwntity=0.5f;  //A value to add repeatedly
+    float sum=0;         //The result of a repetitive addition 
+    int nLoops=10000000; //Number of times to loop
+    float answer;        //The computed answer
     
     //Input
-    cout<<"How many sits are being utilized in BE200?"<<endl;
-    cin>>stsUtil;
+    for(int i=1;i<=nLoops;i++){
+        sum+=qwntity;
+    }
     
     //Calculation 
-    delta=MAXCAP-stsUtil;
+    answer=nLoops*qwntity;
     
     //Output
-    cout<<"Maximum Room Capcity of BE200 = "<<static_cast<int>(MAXCAP);
-        cout<<" seats"<<endl;
-        if(delta>=0){
-            cout<<"class will be held ";
-            cout<<static_cast<char>(delta)<<" available seats remain"<<endl;
-            cout<<fixed<<setprecision(1)<<endl;
-            cout<<"Percent capacity utilized = ";
-            cout<<100.0f*stsUtil/MAXCAP<<"%"<<endl;
-        }
-        else{
-            cout<<"Room capacity has been exeeded ";
-            cout<<static_cast<char>(delta)<<" students need to leave!"<<endl;
-        }
+    cout<<"The product answer  = "<<answer<<endl;
+    cout<<"The sum answer      = "<<sum<<endl;
+    cout<<"The percent error   = "<<(answer-sum)/answer*100<<"%"<<endl;
+    
     //Exit stage right
         
 	return 0;

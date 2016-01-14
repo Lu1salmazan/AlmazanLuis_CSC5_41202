@@ -32,13 +32,10 @@ int main() {
     //out
     cout<<"The Input value  = "<<n<<endl;
     cout<<"sqrt ( "<<n<<")     = "<<sqrt(n)<<endl;
+    cout<<""<<endl;
     
     //Calculation 
-    do{
-    r=n/guess;
-    guess=(guess+r)/2;
-    counter++;
-    }while(abs((r-guess)/guess)*100>tol);
+    for(counter=0;abs((r-guess)/guess)*100>tol;(guess+r)/2)
         
     //Output
     cout<<"The r          = "<<r<<endl;
