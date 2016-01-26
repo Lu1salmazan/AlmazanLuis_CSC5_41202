@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Debug=dist/Debug/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Debug=savingfunctions
-CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/savingfunctions
+CND_ARTIFACT_NAME_Debug=craps_v4
+CND_ARTIFACT_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/craps_v4
 CND_PACKAGE_DIR_Debug=dist/Debug/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Debug=savingfunctions.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/savingfunctions.tar
+CND_PACKAGE_NAME_Debug=crapsv4.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/Cygwin_4.x-Windows/package/crapsv4.tar
 # Release configuration
 CND_PLATFORM_Release=Cygwin_4.x-Windows
 CND_ARTIFACT_DIR_Release=dist/Release/Cygwin_4.x-Windows
-CND_ARTIFACT_NAME_Release=savingfunctions
-CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/savingfunctions
+CND_ARTIFACT_NAME_Release=craps_v4
+CND_ARTIFACT_PATH_Release=dist/Release/Cygwin_4.x-Windows/craps_v4
 CND_PACKAGE_DIR_Release=dist/Release/Cygwin_4.x-Windows/package
-CND_PACKAGE_NAME_Release=savingfunctions.tar
-CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/savingfunctions.tar
+CND_PACKAGE_NAME_Release=crapsv4.tar
+CND_PACKAGE_PATH_Release=dist/Release/Cygwin_4.x-Windows/package/crapsv4.tar
 #
 # include compiler specific variables
 #
