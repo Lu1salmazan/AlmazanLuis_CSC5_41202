@@ -1,5 +1,5 @@
 /* 
-    Author: Dr. Mark E. Lehr
+    Author: Luis Almazan
     Created on January 26, 2016, 08:45 AM
     Purpose:  Variations on a Savings Theme
  */
@@ -18,14 +18,14 @@ using namespace std;
 const char PERCENT=100;//Convert (Decimal to Percentage)
 
 //Function prototypes
-float save1(float,float,int);//Power
-float save2(float,float,int);//Exponential and Log
-float save3(float,float,int);//For-Loops
-float save4(float,float,int);//For-Loops Banking with Pennies
-float save5(float,float,int);//Recursion, function calling itself
+float save1(float,float,int);      //Power
+float save2(float,float,int);      //Exponential and Log
+float save3(float,float,int);      //For-Loops
+float save4(float,float,int);      //For-Loops Banking with Pennies
+float save5(float,float,int);      //Recursion, function calling itself
 float save6(float,int,float=0.05f);//Defaulted save function
-float save7(float,float,int);//For-Loops and static variable
-
+float save7(float,float,int);      //For-Loops and static variable
+void save8(float,float,int,float); //pass by refrence
 //Execution Begins Here
 int main(int argc, char** argv) {
     //Set the random number seed
@@ -60,9 +60,33 @@ int main(int argc, char** argv) {
             <<save7(pv,intRate/PERCENT,nComp)<<endl;
     cout<<"The Savings using For-Loops and static counter = $"
             <<save7(pv,intRate/PERCENT,nComp)<<endl;
+    float futrVal;
+        save8(pv,intRate/PERCENT,nComp, futrVal);
+    cout<<"The next function is past by Refrence"<<endl;
+    cout<<"The Savings using For-Loops  Banking Version   = $"
+            <<futrVal<<endl;
 
     //Exit stage right
     return 0;
+}
+
+//000000011111111112222222222333333333344444444445555555555666666666677777777778
+//345678901234567890123456789012345678901234567890123456789012345678901234567890
+/***************************************SAVE1**********************************/
+//Inputs
+// p->Present Value $'s
+// i->Interest Rate %
+// n->Number of compounding periods
+//Output
+// fv->Future Value $'s
+//Note:  Using the for loop function Banking Implementation
+//       with a pass  by refrence
+void save8(float p,float i,int n,float &fv){
+    int ip=p*PERCENT;//Place the value in pennies
+    for(int years=1;years<=n;years++){
+        ip*=(1+i);
+    }
+    fv=static_cast<float>(ip)/PERCENT;//Returning to $'s
 }
 
 //000000011111111112222222222333333333344444444445555555555666666666677777777778
