@@ -1,6 +1,6 @@
 /* 
  * File:   main.cpp
- * Author: rcc
+ * Author: Luis Almazan
  * Created on January 28, 2016, 10:09 AM
  * Purpose: Storing in Array
  */
