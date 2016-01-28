@@ -6,7 +6,7 @@
  */
 
 #include <iostream>
-
+#include <iomanip>
 using namespace std;
 //System libraries
 
@@ -18,17 +18,21 @@ using namespace std;
 int main(int argc, char** argv) {
     //Declare Variables
     int n1000s,n100s,n10,n1s; //Number of Places
-    float numIN;                //Number input by the user
-    
+    float numIN;              //Number input by the user
+    char acci=42;           //set a variable to the multiple signal
     //Input
     cout<<"Please Enter a number no more than you thousandths place."<<endl;
     cin>>numIN;
     
-    
-
-    
-    cout<<n1000s<<endl;
-    
+    //Calculation
+    if(numIN>=1000){
+        numIN=numIN/1000;
+        cout<<setprecision(1)<<numIN<<" "<<
+                (numIN==1?('*':
+                numIN==2?('**':
+                numIN==3?('***':
+                numIN==4))))
+    }
     return 0;
 }
 
